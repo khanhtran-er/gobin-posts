@@ -14,12 +14,6 @@ Colors can be represented using grayscale or RGB (red, green, blue) sample data.
 ### Image Layout
 A PNG image is an array of rectangular pixels. Each pixel’s size is determined by its bit depth. The bit depth specifies the number of bits used for each sample. Learn more about this here.
 
-## Về cấu trúc tệp PNG
-Một tệp PNG luôn bắt đầu với một chữ kí (signature) và theo sau là các đoạn (chunks).
-
-### Chữ kí của tệp PNG (PNG file signature)
-Tám bytes đầu tiên của tệp PNG luôn chứa các giá trị `137 80 78 71 13 10 26 10` là chữ kí của tệp PNG.
-
 ### File Structure
 A PNG file always starts with a signature followed by chunks. Each chunk contains four parts:
 1. Length (4 bytes): Length of the chunk data (excluding chunk type, CRC, and itself).
